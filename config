@@ -192,5 +192,14 @@ bar {
 #Auto start apps
 exec --no-startup-id i3-msg $ws10 exec /usr/bin/brave
 
-exec_always nitrogen --restore
+#Hot Keys
+bindsym Ctrl+Shift+l exec --no-startup-id i3lock -i ~/Pictures/Wallpapers/Tree.png
+bindsym Mod1+Ctrl+h exec --no-startup-id pcmanfm
+bindsym Mod1+Ctrl+b exec --no-startup-id brave
 
+#Brightness Cotrol
+# # Sreen brightness controls
+bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
+
+exec_always nitrogen --restore
